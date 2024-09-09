@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Booth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana:wght@400&family=Instrument+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Photobooth</h1>
+        <h2>Capture your favorite shots, add a quote, and download them to your device!</h2>
+        <div id="quote-overlay">
+            <input type="text" id="quote" placeholder="Enter your quote here!" />
+        </div>
+        <video id="video" autoplay></video>
+        <div id="photo-strip">
+            <canvas id="photo1" class="photo"></canvas>
+            <canvas id="photo2" class="photo"></canvas>
+            <canvas id="photo3" class="photo"></canvas>
+        </div>
+        <button id="capture">Capture</button>
+        <button id="download">Download</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
